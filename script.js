@@ -8,7 +8,7 @@ let computerScore = 0;
 
 function getComputerChoice() {
 
-return Choices[Math.floor(Math.random()*3)];
+    return Choices[Math.floor(Math.random()*3)];
 
 }
 
@@ -25,30 +25,30 @@ function playRound(playerSelection,computerSelection) {
 
     if(playerSelection=="rock"&&computerSelection=="paper") {
         computerScore+=1;
-        return "You Lost! Paper beats Rock."
+        return "You Lost! Paper beats Rock.";
     }
     else if(playerSelection=="rock"&&computerSelection=="scissors") {
 
         userScore +=1;
-        return "You Win! Rock beats Scissors"
+        return "You Win! Rock beats Scissors";
     }
 
     if(playerSelection=="paper"&&computerSelection=="rock") {
         userScore +=1;
-        return "You Win! Paper beats Rock."
+        return "You Win! Paper beats Rock.";
     }
     else if(playerSelection=="paper"&&computerSelection=="scissors") {
         computerScore+=1;
-        return "You Lost! Scissors beats Paper"
+        return "You Lost! Scissors beats Paper";
     }
 
     if(playerSelection=="scissors"&&computerSelection=="rock") {
         computerScore+=1;
-        return "You Lost! Rock beats Scissors."
+        return "You Lost! Rock beats Scissors.";
     }
     else if(playerSelection=="scissors"&&computerSelection=="paper") {
         userScore +=1;
-        return "You Win! Scissors beats Paper"
+        return "You Win! Scissors beats Paper";
     }
 
 
@@ -72,7 +72,7 @@ function game() {
         console.log("You Win the Game!");
     }
     else {
-        console.log("You Lose the Game!")
+        console.log("You Lose the Game!");
     }
 
 
