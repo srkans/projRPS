@@ -71,3 +71,16 @@ img {
     
 }
 
+.round-result {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#round {
+
+    font-size: 36px;
+
+}
